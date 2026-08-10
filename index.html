@@ -108,18 +108,19 @@
       <h1>隐私政策 / Privacy Policy</h1>
       <p class="muted">
         生效日期 / Effective Date: <strong>March 4, 2026</strong><br />
-        最近更新 / Last Updated: <strong>April 7, 2026</strong>
+        最近更新 / Last Updated: <strong>August 10, 2026</strong>
       </p>
       <p>
-        本政策适用于一兜英语（YiDouWords）iOS 应用，包括使用自动续费订阅服务的用户。我们重视你的隐私，并按照适用法律
+        本政策适用于一兜英语（YiDouWords）iOS 应用，包括 AI 点数账户、App 内购买、Pro 订阅和内置 AI 服务。我们重视你的隐私，并按照适用法律
         （包括 GDPR 与 CCPA/CPRA）及 Apple App Store 审核指南 5.1.1 的原则，说明我们如何处理数据。
       </p>
       <p>
-        This policy applies to the YiDouWords iOS app, including users of auto-renewable subscriptions. We describe
+        This policy applies to the YiDouWords iOS app, including AI point accounts, in-app purchases, Pro subscriptions, and the built-in AI service. We describe
         our data practices in line with applicable laws (including GDPR and CCPA/CPRA) and Apple App Store Review
         Guideline 5.1.1.
       </p>
     </section>
+
 
     <section class="card">
       <h2>目录 / Table of Contents</h2>
@@ -139,6 +140,7 @@
       </ol>
     </section>
 
+
     <section id="scope" class="card">
       <h2>1) 适用范围 / Scope</h2>
       <p>
@@ -151,36 +153,26 @@
       </p>
     </section>
 
+
     <section id="collect" class="card">
       <h2>2) 我们处理哪些数据 / What Data We Process</h2>
       <div class="grid">
-        <div class="box">
-          <p class="k">本地数据 / On-device Data</p>
-          <ul>
-            <li>网页收藏与浏览历史</li>
-            <li>生词本、熟知词本、导入词书与释义</li>
-            <li>阅读图书与阅读进度</li>
-            <li>学习计划与学习进度</li>
-            <li>应用偏好设置</li>
-          </ul>
-        </div>
-        <div class="box">
-          <p class="k">我们不做的事 / What We Do NOT Do</p>
-          <ul>
-            <li>不接入广告 SDK 或追踪 SDK</li>
-            <li>不建立开发者自有后台来收集上述数据</li>
-            <li>不出售或共享个人信息用于跨站追踪</li>
-          </ul>
-        </div>
+        <div class="box"><p class="k">本地与 iCloud 数据 / On-device and iCloud Data</p><ul>
+          <li>网页收藏与浏览历史、生词本、阅读资料、学习计划、阅读进度和应用设置主要保存在设备本地。</li>
+          <li>启用 iCloud 同步时，相关学习数据存储在用户自己的 Apple iCloud 账户中。</li>
+        </ul></div>
+        <div class="box"><p class="k">AI 点数账户数据 / AI Account Data</p><ul>
+          <li><strong>用户 ID：</strong>通过 Apple 登录产生的稳定账户标识及应用生成的邀请 ID，用于跨设备识别同一账户。</li>
+          <li><strong>购买历史：</strong>App Store 交易标识、产品 ID、购买、续订及退款状态，用于发放或追回点数和 Pro 权益。</li>
+          <li><strong>设备 ID：</strong>应用生成的安装级风控标识及其哈希值，用于防欺诈、测试环境限额和账户安全；不读取 IDFA。</li>
+          <li><strong>AI 内容：</strong>用户主动提交给内置 AI 的单词、句子、问题和上下文，以及 AI 回复。</li>
+          <li><strong>使用数据：</strong>AI 请求的 token 用量、点数扣减、余额变更和错误状态，用于真实用量结算、幂等重试和客服排查。</li>
+        </ul></div>
       </div>
-      <p>
-        你在应用内打开的第三方网站（例如你主动访问的网页、词典站点）可能按照其自身隐私政策处理数据，这部分不由 YiDouWords 控制。
-      </p>
-      <p>
-        Third-party websites opened by you in the in-app browser may process data under their own privacy policies.
-        YiDouWords does not control those third-party practices.
-      </p>
+      <p>AI prompts and responses are transmitted through our Cloudflare-based service to the selected AI provider solely to provide the requested AI feature. We do not use this data for advertising or cross-app tracking.</p>
+      <p>你在应用内主动打开的第三方网站或配置的第三方 AI、翻译、语音服务，会按照其自身隐私政策处理你提交的数据；自备 API 密钥保存在设备端，不会由我们的点数服务代为使用。</p>
     </section>
+
 
     <section id="icloud" class="card">
       <h2>3) iCloud 同步说明 / iCloud Sync</h2>
@@ -195,48 +187,45 @@
       </p>
     </section>
 
+
     <section id="use" class="card">
       <h2>4) 用途与法律依据 / Purposes and Legal Bases</h2>
-      <h3>中文</h3>
       <ul>
-        <li><strong>提供核心功能</strong>：用于实现阅读、点词、词汇学习与进度记录。</li>
-        <li><strong>实现设备间同步（可选）</strong>：仅在你启用 iCloud 同步时处理同步数据。</li>
-        <li><strong>用户反馈</strong>：你主动通过系统邮件发送反馈时，我们仅处理你发送的邮件内容。</li>
+        <li><strong>App 功能：</strong>登录认证、跨设备账户识别、AI 请求、真实用量结算、点数与 Pro 权益管理、邀请奖励和购买恢复。</li>
+        <li><strong>安全与防欺诈：</strong>限制 TestFlight 滥用、识别异常账号或设备、处理退款追回和保护账户。</li>
+        <li><strong>服务可靠性：</strong>短期保存请求结果用于幂等重试、断流结算、故障排查和避免重复扣点。</li>
+        <li><strong>用户支持：</strong>处理用户主动提交的客服邮件及账户问题。</li>
       </ul>
-      <p>
-        GDPR 法律依据（如适用）：履行合同（Art. 6(1)(b)）、用户同意（Art. 6(1)(a)）。
-      </p>
-      <h3>English</h3>
-      <ul>
-        <li><strong>Core functionality</strong>: reading, word lookup, vocabulary learning, and progress records.</li>
-        <li><strong>Optional sync</strong>: processed only if you enable iCloud sync.</li>
-        <li><strong>User support</strong>: if you voluntarily email us, we process that email to respond.</li>
-      </ul>
-      <p>
-        GDPR legal bases (where applicable): contract necessity (Art. 6(1)(b)) and consent (Art. 6(1)(a)).
-      </p>
+      <p>我们不会将上述数据用于第三方广告、开发者广告、数据经纪或跨应用追踪。</p>
+      <p>We use this data only for app functionality, authentication, purchase verification, usage-based point settlement, fraud prevention, service reliability, refunds, and customer support. We do not use it for advertising or tracking.</p>
+      <p>GDPR 法律依据（如适用）：履行合同（Art. 6(1)(b)）、合法利益（安全与防欺诈，Art. 6(1)(f)）及用户同意（Art. 6(1)(a)）。</p>
     </section>
+
 
     <section id="share" class="card">
       <h2>5) 数据共享 / Data Sharing</h2>
       <ul>
-        <li>我们不会出售你的个人信息。</li>
-        <li>我们不会将你的个人信息共享给数据经纪商。</li>
-        <li>我们不会为了跨应用/跨网站广告追踪而共享个人信息。</li>
+        <li><strong>Apple：</strong>处理 App 内购买、订阅、退款、通过 Apple 登录和 iCloud 服务。</li>
+        <li><strong>Cloudflare：</strong>提供 API 网络、边缘运行环境、数据库和安全防护。</li>
+        <li><strong>AI 服务提供商：</strong>仅接收完成用户所请求 AI 功能所需的文本与上下文。</li>
       </ul>
-      <p>
-        Data may be processed by Apple iCloud at your direction when iCloud sync is enabled.
-      </p>
+      <p>我们不出售个人信息，不向数据经纪商提供数据，也不进行跨应用或跨网站广告追踪。</p>
+      <p>Service providers process data only as needed to deliver app functionality, security, purchases, and requested AI responses.</p>
     </section>
+
 
     <section id="retention" class="card">
       <h2>6) 保存期限 / Retention</h2>
       <ul>
-        <li>本地数据：保留在你的设备中，直到你删除应用或清除数据。</li>
-        <li>iCloud 同步数据：保留在你的 iCloud 账户中，直到你删除对应数据或关闭 iCloud。</li>
-        <li>反馈邮件：保留至问题处理完成及合理合规期限。</li>
+        <li>本地数据：保留在设备中，直到用户删除应用或清除数据。</li>
+        <li>iCloud 数据：保留在用户的 iCloud 账户中，直到用户删除对应数据。</li>
+        <li>AI 请求与回复：为幂等重试和异常恢复短期保存，通常不超过 15 分钟，随后由自动清理任务删除。</li>
+        <li>账户、余额、交易、退款和点数流水：为提供持续账户权益、防止重复发放及履行财务和争议处理义务而保存；用户可在 App 内申请永久删除 AI 账户，但 Apple 订阅需在系统订阅管理中另行取消。</li>
+        <li>风控记录：在防欺诈与安全所需的合理期限内保存，并限制访问。</li>
       </ul>
+      <p>删除 AI 账户会永久删除或匿名化可删除的账户资料；剩余充值点数不可恢复。法律、财务、反欺诈或争议处理要求保留的最少交易记录可能继续保存。</p>
     </section>
+
 
     <section id="rights-gdpr" class="card">
       <h2>7) GDPR 权利 / GDPR Rights</h2>
@@ -253,6 +242,7 @@
       </p>
     </section>
 
+
     <section id="rights-ccpa" class="card">
       <h2>8) CCPA/CPRA 权利 / CCPA/CPRA Rights</h2>
       <p>如你是加州居民，你可能享有以下权利：</p>
@@ -268,12 +258,14 @@
       </p>
     </section>
 
+
     <section id="children" class="card">
       <h2>9) 儿童隐私 / Children</h2>
       <p>
         本应用不面向 13 岁以下儿童定向提供服务。若你认为未成年人未经监护人同意提交了个人信息，请联系我们删除。
       </p>
     </section>
+
 
     <section id="security" class="card">
       <h2>10) 数据安全 / Security</h2>
@@ -282,12 +274,14 @@
       </p>
     </section>
 
+
     <section id="changes" class="card">
       <h2>11) 政策更新 / Changes</h2>
       <p>
         我们可能根据功能或法律变化更新本政策。更新后会在本页面更新“最近更新日期”。
       </p>
     </section>
+
 
     <section id="contact" class="card">
       <h2>12) 联系我们 / Contact</h2>
